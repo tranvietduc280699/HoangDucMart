@@ -1,0 +1,296 @@
+
+
+CREATE DATABASE URAGROUP;
+use URAGROUP;
+
+----------------- thong tin người và phần quyền
+CREATE TABLE URA_USERS (
+    USER_ID VARCHAR(36) PRIMARY KEY,
+    USER_NAME VARCHAR(50) NOT NULL UNIQUE,
+    PASSWORD_HASH VARCHAR(255) NOT NULL,
+
+    -- THONG TIN CA NHAN
+    FULL_NAME VARCHAR(100) NOT NULL,
+    DATE_OF_BIRTH DATE NULL,
+    GENDER VARCHAR(20) NULL,
+    PHONE VARCHAR(15) NULL,
+    EMAIL VARCHAR(255) NULL,
+    ADDRESS VARCHAR(255) NULL,
+    AVATAR_URL VARCHAR(500) NULL,
+    IS_ACTIVE TINYINT(1) NOT NULL DEFAULT 1,
+
+    -- THONG TIN TAO VA CAP NHAT
+    CREATED_AT DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    CREATED_BY VARCHAR(36) NULL,
+    UPDATED_AT DATETIME NULL ON UPDATE CURRENT_TIMESTAMP,
+    UPDATED_BY VARCHAR(36) NULL,
+    LAST_LOGIN_AT DATETIME NULL
+);
+
+--BẢNG VAI TRÒ (ROLES)
+CREATE TABLE URA_ROLES (
+    ROLE_ID INT NOT NULL PRIMARY KEY,
+    ROLE_NAME VARCHAR(50) NOT NULL UNIQUE,
+    DESCRIPTION VARCHAR(255) NULL
+);
+
+-- thêm mới mặc định vai trò
+INSERT INTO URA_ROLES (ROLE_ID, ROLE_NAME, DESCRIPTION)
+VALUES
+    (1, 'Admin', 'Quản trị viên toàn quyền hệ thống'),
+    (2, 'Manager', 'Quản lý, duyệt dữ liệu và xem báo cáo'),
+    (3, 'Staff', 'Nhân viên vận hành nghiệp vụ'),
+    (4, 'Customer', 'Khách hàng hoặc người dùng thông thường');
+
+
+-- BẢNG PHÂN QUYỀN (USER_ROLES)
+CREATE TABLE URA_USER_ROLES (
+    USER_ID VARCHAR(36) NOT NULL,
+    ROLE_ID INT NOT NULL,
+    PRIMARY KEY (USER_ID, ROLE_ID),
+    
+    -- KHÓA NGOẠI LIÊN KẾT
+    CONSTRAINT FK_URA_UserRoles_Users FOREIGN KEY (USER_ID) REFERENCES URA_USERS(USER_ID),
+    CONSTRAINT FK_URA_UserRoles_Roles FOREIGN KEY (ROLE_ID) REFERENCES URA_ROLES(ROLE_ID)
+);
+
+
+CREATE TABLE URA_TOKENS (
+    TOKEN_ID VARCHAR(36) PRIMARY KEY,
+    USER_ID VARCHAR(36) NOT NULL,
+
+    TOKEN_HASH VARCHAR(255) NOT NULL,
+    EXPIRES_AT DATETIME NOT NULL,
+    REVOKED_AT DATETIME NULL,
+    CREATED_AT DATETIME NOT NULL,
+
+    CONSTRAINT FK_URA_TOKENS_USERS FOREIGN KEY (USER_ID) REFERENCES URA_USERS(USER_ID),
+    CONSTRAINT UQ_URA_TOKENS_TOKEN_HASH UNIQUE (TOKEN_HASH)
+);
+
+
+-------------------------------- products
+------------ sản phẩm
+CREATE TABLE URA_PRODUCTS(
+	PRODUCT_ID    VARCHAR(36)   NOT NULL PRIMARY KEY,
+    CATEGORY_ID   VARCHAR(36)      NULL,
+    QR_CODE 		VARCHAR(100)NULL, 
+    IMAGE_URL     VARCHAR(500)  NULL,
+    SKU           VARCHAR(64)   NOT NULL,
+    PRODUCT_NAME  VARCHAR(200)  NOT NULL,
+    DESCRIPTION   TEXT          NULL,
+    UNIT          VARCHAR(30)   NOT NULL,
+    SELL_PRICE    DECIMAL(15,2) NOT NULL,
+    -- Giá vốn nhập hàng
+    COST_PRICE    DECIMAL(15,2) NULL,
+    -- Trọng lượng của sản phẩm
+    WEIGHT_GRAMS  INT  NULL,
+    IS_ACTIVE     TINYINT(1)    NOT NULL ,
+    -- Cờ đánh dấu sản phẩm nổi bật
+    IS_FEATURED   TINYINT(1)    NOT NULL ,
+
+    CREATED_AT    DATETIME(6)   NOT NULL,
+    CREATED_BY    VARCHAR(36)      NULL,
+    UPDATED_AT    DATETIME(6)   NULL ,
+    UPDATED_BY    VARCHAR(36)      NULL,
+    CONSTRAINT FK_URA_Products_Categories FOREIGN KEY (CATEGORY_ID) REFERENCES URA_CATEGORIES(CATEGORY_ID)
+);
+
+
+-- loại sản phẩm
+CREATE TABLE URA_CATEGORIES (
+    CATEGORY_ID   VARCHAR(36)      NOT NULL PRIMARY KEY,
+    CATEGORY_NAME VARCHAR(150)  NOT NULL,
+    DESCRIPTION   TEXT          NULL,
+    PARENT_ID     VARCHAR(36)      NULL, 
+    IS_ACTIVE     TINYINT(1)    NOT NULL,
+    
+    CREATED_AT    DATETIME(6)   NOT NULL,
+    CREATED_BY    VARCHAR(36)      NULL,
+    UPDATED_AT    DATETIME(6)   NULL,
+    UPDATED_BY    VARCHAR(36)      NULL,
+    
+    CONSTRAINT FK_URA_Categories_Parent FOREIGN KEY (PARENT_ID) REFERENCES URA_CATEGORIES(CATEGORY_ID)
+);
+
+-- thêm loại sản phẩm
+
+INSERT INTO URA_CATEGORIES
+(
+    CATEGORY_ID,
+    CATEGORY_NAME,
+    DESCRIPTION,
+    PARENT_ID,
+    IS_ACTIVE,
+    CREATED_AT,
+    CREATED_BY
+)
+VALUES
+(UUID(), 'Thực phẩm', 'Các loại thực phẩm và đồ ăn', NULL, 1, NOW(6), NULL),
+(UUID(), 'Đồ uống', 'Các loại nước uống và đồ giải khát', NULL, 1, NOW(6), NULL),
+(UUID(), 'Hóa mỹ phẩm', 'Các sản phẩm chăm sóc cá nhân và vệ sinh nhà cửa', NULL, 1, NOW(6), NULL),
+(UUID(), 'Đồ gia dụng', 'Các vật dụng phục vụ sinh hoạt gia đình', NULL, 1, NOW(6), NULL),
+(UUID(), 'Đồ thờ cúng và vàng mã', 'Hương, nhang, nến, vàng mã và đồ thờ cúng', NULL, 1, NOW(6), NULL),
+(UUID(), 'Văn phòng phẩm', 'Các loại giấy, bút và đồ dùng học tập, văn phòng', NULL, 1, NOW(6), NULL),
+(UUID(), 'Phụ kiện và đồ dùng cá nhân', 'Tất, găng tay cao su, găng tay vải, dép đi trong nhà và các phụ kiện cá nhân', NULL, 1, NOW(6), NULL),
+(UUID(), 'Mẹ và bé', 'Các sản phẩm dành cho mẹ và trẻ em', NULL, 1, NOW(6), NULL),
+(UUID(), 'Các mặt hàng khác', 'Các sản phẩm chưa thuộc những danh mục hiện có', NULL, 1, NOW(6), NULL);
+
+--------------------------------- sales
+-- BẢNG đơn bán hàng
+CREATE TABLE URA_ORDERS (
+    ORDER_ID        VARCHAR(36)     NOT NULL PRIMARY KEY,
+    USER_ID         VARCHAR(36)   NULL,
+    ORDER_CODE      VARCHAR(50)   NOT NULL UNIQUE,
+    ORDER_STATUS    INT           NOT NULL,
+    PAYMENT_STATUS  INT           NOT NULL,
+    PAYMENT_METHOD  VARCHAR(50)   NULL,
+    
+    TOTAL_AMOUNT    DECIMAL(15,2) NOT NULL,
+    -- giảm giá
+    DISCOUNT_AMOUNT DECIMAL(15,2) NULL DEFAULT 0.00,
+    -- tổng thực tế
+    FINAL_AMOUNT    DECIMAL(15,2) NOT NULL,
+    -- tên người nhân hàng
+    RECEIVER_NAME   VARCHAR(150)   NULL,
+    -- sdt người nhận
+    RECEIVER_PHONE  VARCHAR(20)    NULL,
+    -- địa chỉ người nhận
+    SHIPPING_ADDRESS TEXT          NULL,
+    NOTE            TEXT          NULL,
+    VAT_RATE DECIMAL(5,2) NULL,
+    VAT_AMOUNT DECIMAL(15,2) NULL,
+    
+    CREATED_AT      DATETIME(6)   NOT NULL,
+    CREATED_BY      VARCHAR(36)      NULL,
+    UPDATED_AT      DATETIME(6)   NULL,
+    UPDATED_BY      VARCHAR(36)      NULL,
+    
+    CONSTRAINT FK_URA_Orders_Users FOREIGN KEY (USER_ID) REFERENCES URA_USERS(USER_ID)
+);
+
+-- BẢNG chi tiết đơn hàng
+CREATE TABLE URA_ORDER_DETAILS (
+    ORDER_DETAIL_ID VARCHAR(36)      NOT NULL PRIMARY KEY,
+    ORDER_ID        VARCHAR(36)      NOT NULL,
+    PRODUCT_ID      VARCHAR(36)      NOT NULL,
+    
+    PRODUCT_NAME    VARCHAR(200)  NOT NULL,
+    SKU             VARCHAR(64)   NOT NULL,
+    UNIT            VARCHAR(30)   NOT NULL,
+    QUANTITY        DECIMAL(15,3) NOT NULL,
+    UNIT_PRICE      DECIMAL(15,2) NOT NULL,
+    TOTAL_PRICE     DECIMAL(15,2) NOT NULL,
+    
+    CREATED_AT      DATETIME(6)   NOT NULL,
+    CREATED_BY      VARCHAR(36)     NULL,
+    UPDATED_AT      DATETIME(6)   NULL,
+    UPDATED_BY      VARCHAR(36)      NULL,
+    VAT_RATE DECIMAL(5,2) NULL,
+    VAT_AMOUNT DECIMAL(15,2) NULL,
+    
+    CONSTRAINT FK_URA_OrderDetails_Orders FOREIGN KEY (ORDER_ID) REFERENCES URA_ORDERS(ORDER_ID),
+    CONSTRAINT FK_URA_OrderDetails_Products FOREIGN KEY (PRODUCT_ID) REFERENCES URA_PRODUCTS(PRODUCT_ID)
+);
+
+-- BẢNG GIỎ HÀNG CHUNG (Mỗi User có 1 giỏ hàng)
+CREATE TABLE URA_CARTS (
+    CART_ID       VARCHAR(36)      NOT NULL PRIMARY KEY,
+    USER_ID       VARCHAR(36)   NOT NULL UNIQUE,
+    
+    CREATED_AT    DATETIME(6)   NOT NULL,
+    CREATED_BY    VARCHAR(36)      NULL,
+    UPDATED_AT    DATETIME(6)   NULL,
+    UPDATED_BY    VARCHAR(36)      NULL,
+    
+    CONSTRAINT FK_URA_Carts_Users FOREIGN KEY (USER_ID) REFERENCES URA_USERS(USER_ID)
+);
+
+-- BẢNG CHI TIẾT SẢN PHẨM TRONG GIỎ HÀNG
+CREATE TABLE URA_CART_ITEMS (
+    CART_ITEM_ID  VARCHAR(36)     NOT NULL PRIMARY KEY,
+    CART_ID       VARCHAR(36)      NOT NULL,
+    PRODUCT_ID    VARCHAR(36)      NOT NULL,
+    QUANTITY      DECIMAL(15,3)       NOT NULL,
+    
+    CREATED_AT    DATETIME(6)   NOT NULL,
+    CREATED_BY    VARCHAR(36)      NULL,
+    UPDATED_AT    DATETIME(6)   NULL,
+    UPDATED_BY    VARCHAR(36)      NULL,
+    
+    CONSTRAINT FK_URA_CartItems_Carts FOREIGN KEY (CART_ID) REFERENCES URA_CARTS(CART_ID),
+    CONSTRAINT FK_URA_CartItems_Products FOREIGN KEY (PRODUCT_ID) REFERENCES URA_PRODUCTS(PRODUCT_ID)
+);
+
+
+-- ------------------------ Công nợ
+-- bảng công nợ 
+CREATE TABLE URA_DEBTS(
+	 DEBT_ID VARCHAR(36) NOT NULL PRIMARY KEY,
+	 -- đơn hàng (lấy nợ từ đơn hàng)
+	 ORDER_ID VARCHAR(36) NULL UNIQUE,
+	 USER_ID VARCHAR(36) NULL,
+	  -- Lưu thông tin người nợ tại thời điểm tạo công nợ
+     DEBTOR_NAME VARCHAR(150) NOT NULL,
+     DEBTOR_PHONE VARCHAR(20)  NULL,
+     DEBTOR_ADDRESS TEXT NULL,
+     DEBT_TYPE INT NOT NULL,   -- 1 nợ từ đơn hàng, 2 nợ trực tiếp
+     -- tổng tiền
+     TOTAL_AMOUNT DECIMAL(15,2) NOT NULL,
+     -- đã trả
+     PAID_AMOUNT DECIMAL(15,2) NOT NULL,
+     -- còn lại
+     REMAINING_AMOUNT DECIMAL(15,2) NOT NULL,
+     DEBT_STATUS INT NOT NULL,   -- 1: Chưa thanh toán, 2: Thanh toán một phần, 3: Đã thanh toán, 4: Đã hủy
+     NOTE TEXT NULL,
+     
+     CREATED_AT DATETIME(6) NOT NULL,
+    CREATED_BY VARCHAR(36) NULL,
+    UPDATED_AT DATETIME(6) NULL,
+    UPDATED_BY VARCHAR(36) NULL,
+    
+     CONSTRAINT FK_DEBTS_ORDERS FOREIGN KEY (ORDER_ID) REFERENCES URA_ORDERS(ORDER_ID),
+     CONSTRAINT FK_DEBTS_USERS FOREIGN KEY (USER_ID) REFERENCES URA_USERS(USER_ID)
+);
+-- bảng chi tiết công nợ
+CREATE TABLE URA_DEBT_DETAILS (
+    DEBT_DETAIL_ID VARCHAR(36) PRIMARY KEY,
+    DEBT_ID VARCHAR(36) NOT NULL,
+
+    PRODUCT_ID VARCHAR(36) NULL,
+
+    -- Lưu thông tin sản phẩm tại thời điểm phát sinh nợ
+    PRODUCT_NAME VARCHAR(200) NOT NULL,
+    SKU VARCHAR(64) NULL,
+    UNIT INT NOT NULL,
+
+    QUANTITY DECIMAL(15,3) NOT NULL,
+    UNIT_PRICE DECIMAL(15,2) NOT NULL,
+    TOTAL_PRICE DECIMAL(15,2) NOT NULL,
+
+    NOTE TEXT NULL,
+
+    CREATED_AT DATETIME(6) NOT NULL,
+    CREATED_BY VARCHAR(36) NULL,
+
+    CONSTRAINT FK_DEBT_DETAILS_DEBTS FOREIGN KEY (DEBT_ID) REFERENCES URA_DEBTS(DEBT_ID),
+
+    CONSTRAINT FK_DEBT_DETAILS_PRODUCTS FOREIGN KEY (PRODUCT_ID) REFERENCES URA_PRODUCTS(PRODUCT_ID)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

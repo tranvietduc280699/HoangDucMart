@@ -1,0 +1,15 @@
+D:\UraERP\Backend\UraAPI\UraDataLayer\bin\Debug\net8.0\UraDataLayer.deps.json
+D:\UraERP\Backend\UraAPI\UraDataLayer\bin\Debug\net8.0\UraDataLayer.dll
+D:\UraERP\Backend\UraAPI\UraDataLayer\bin\Debug\net8.0\UraDataLayer.pdb
+D:\UraERP\Backend\UraAPI\UraDataLayer\bin\Debug\net8.0\UraDataModel.dll
+D:\UraERP\Backend\UraAPI\UraDataLayer\bin\Debug\net8.0\UraDataModel.pdb
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\UraDataLayer.csproj.AssemblyReference.cache
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\UraDataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\UraDataLayer.AssemblyInfoInputs.cache
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\UraDataLayer.AssemblyInfo.cs
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\UraDataLayer.csproj.CoreCompileInputs.cache
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\UraDataL.50258BB1.Up2Date
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\UraDataLayer.dll
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\refint\UraDataLayer.dll
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\UraDataLayer.pdb
+D:\UraERP\Backend\UraAPI\UraDataLayer\obj\Debug\net8.0\ref\UraDataLayer.dll

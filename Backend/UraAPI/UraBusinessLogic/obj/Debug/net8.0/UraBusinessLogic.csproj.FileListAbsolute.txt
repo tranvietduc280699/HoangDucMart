@@ -1,0 +1,17 @@
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\bin\Debug\net8.0\UraBusinessLogic.deps.json
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\bin\Debug\net8.0\UraBusinessLogic.dll
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\bin\Debug\net8.0\UraBusinessLogic.pdb
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\bin\Debug\net8.0\UraDataLayer.dll
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\bin\Debug\net8.0\UraDataModel.dll
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\bin\Debug\net8.0\UraDataLayer.pdb
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\bin\Debug\net8.0\UraDataModel.pdb
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\UraBusinessLogic.csproj.AssemblyReference.cache
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\UraBusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\UraBusinessLogic.AssemblyInfoInputs.cache
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\UraBusinessLogic.AssemblyInfo.cs
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\UraBusinessLogic.csproj.CoreCompileInputs.cache
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\UraBusin.741F59CE.Up2Date
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\UraBusinessLogic.dll
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\refint\UraBusinessLogic.dll
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\UraBusinessLogic.pdb
+D:\UraERP\Backend\UraAPI\UraBusinessLogic\obj\Debug\net8.0\ref\UraBusinessLogic.dll

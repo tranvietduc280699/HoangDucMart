@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UraERP\\Backend\\UraAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|d:\\uraerp\\backend\\uraapi\\uraapi\\authentication\\tokenauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|solutionrelative:uraapi\\authentication\\tokenauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|d:\\uraerp\\backend\\uraapi\\uraapi\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|solutionrelative:uraapi\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|d:\\uraerp\\backend\\uraapi\\uraapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|solutionrelative:uraapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E8376F0-C4CB-E6C9-F64D-27071E1AB58F}|UraBusinessLogic\\UraBusinessLogic.csproj|d:\\uraerp\\backend\\uraapi\\urabusinesslogic\\businesslogics\\basebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E8376F0-C4CB-E6C9-F64D-27071E1AB58F}|UraBusinessLogic\\UraBusinessLogic.csproj|solutionrelative:urabusinesslogic\\businesslogics\\basebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|d:\\uraerp\\backend\\uraapi\\uraapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|solutionrelative:uraapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|d:\\uraerp\\backend\\uraapi\\uraapi\\controllers\\products\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|solutionrelative:uraapi\\controllers\\products\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|d:\\uraerp\\backend\\uraapi\\uraapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E73DCF-11F4-4A5C-3D1E-DBC1109567DE}|UraAPI\\UraAPI.csproj|solutionrelative:uraapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E8376F0-C4CB-E6C9-F64D-27071E1AB58F}|UraBusinessLogic\\UraBusinessLogic.csproj|d:\\uraerp\\backend\\uraapi\\urabusinesslogic\\businesslogics\\products\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E8376F0-C4CB-E6C9-F64D-27071E1AB58F}|UraBusinessLogic\\UraBusinessLogic.csproj|solutionrelative:urabusinesslogic\\businesslogics\\products\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2033337944:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenAuthenticationHandler.cs",
+              "DocumentMoniker": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Authentication\\TokenAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "UraAPI\\Authentication\\TokenAuthenticationHandler.cs",
+              "ToolTip": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Authentication\\TokenAuthenticationHandler.cs",
+              "RelativeToolTip": "UraAPI\\Authentication\\TokenAuthenticationHandler.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCEAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T04:04:28.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Controllers\\Users\\UserController.cs",
+              "RelativeDocumentMoniker": "UraAPI\\Controllers\\Users\\UserController.cs",
+              "ToolTip": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Controllers\\Users\\UserController.cs",
+              "RelativeToolTip": "UraAPI\\Controllers\\Users\\UserController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T04:04:26.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "UraAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "UraAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T04:04:23.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductBL.cs",
+              "DocumentMoniker": "D:\\UraERP\\Backend\\UraAPI\\UraBusinessLogic\\BusinessLogics\\Products\\ProductBL.cs",
+              "RelativeDocumentMoniker": "UraBusinessLogic\\BusinessLogics\\Products\\ProductBL.cs",
+              "ToolTip": "D:\\UraERP\\Backend\\UraAPI\\UraBusinessLogic\\BusinessLogics\\Products\\ProductBL.cs",
+              "RelativeToolTip": "UraBusinessLogic\\BusinessLogics\\Products\\ProductBL.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T07:53:08.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseBL.cs",
+              "DocumentMoniker": "D:\\UraERP\\Backend\\UraAPI\\UraBusinessLogic\\BusinessLogics\\BaseBL.cs",
+              "RelativeDocumentMoniker": "UraBusinessLogic\\BusinessLogics\\BaseBL.cs",
+              "ToolTip": "D:\\UraERP\\Backend\\UraAPI\\UraBusinessLogic\\BusinessLogics\\BaseBL.cs",
+              "RelativeToolTip": "UraBusinessLogic\\BusinessLogics\\BaseBL.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAewE0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T07:52:55.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "UraAPI\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "UraAPI\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAlwE0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T07:51:23.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Controllers\\Products\\ProductController.cs",
+              "RelativeDocumentMoniker": "UraAPI\\Controllers\\Products\\ProductController.cs",
+              "ToolTip": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Controllers\\Products\\ProductController.cs",
+              "RelativeToolTip": "UraAPI\\Controllers\\Products\\ProductController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T07:47:14.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Program.cs",
+              "RelativeDocumentMoniker": "UraAPI\\Program.cs",
+              "ToolTip": "D:\\UraERP\\Backend\\UraAPI\\UraAPI\\Program.cs",
+              "RelativeToolTip": "UraAPI\\Program.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAADcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T02:25:48.498Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

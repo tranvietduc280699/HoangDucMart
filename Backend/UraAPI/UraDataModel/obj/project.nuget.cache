@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "HLecf+ksZX8=",
+  "success": true,
+  "projectFilePath": "D:\\UraERP\\Backend\\UraAPI\\UraDataModel\\UraDataModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.11\\microsoft.aspnetcore.http.features.2.3.11.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

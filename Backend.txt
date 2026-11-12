@@ -1,0 +1,3 @@
+
+============== https://console.cloudinary.com/ : lưu trữ ảnh
+============= BE : cài thư viện: CloudinaryDotNet  , Microsoft.AspNetCore.Http

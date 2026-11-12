@@ -1,0 +1,12 @@
+D:\UraERP\Backend\UraAPI\UraDataModel\bin\Debug\net8.0\UraDataModel.deps.json
+D:\UraERP\Backend\UraAPI\UraDataModel\bin\Debug\net8.0\UraDataModel.dll
+D:\UraERP\Backend\UraAPI\UraDataModel\bin\Debug\net8.0\UraDataModel.pdb
+D:\UraERP\Backend\UraAPI\UraDataModel\obj\Debug\net8.0\UraDataModel.csproj.AssemblyReference.cache
+D:\UraERP\Backend\UraAPI\UraDataModel\obj\Debug\net8.0\UraDataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\UraERP\Backend\UraAPI\UraDataModel\obj\Debug\net8.0\UraDataModel.AssemblyInfoInputs.cache
+D:\UraERP\Backend\UraAPI\UraDataModel\obj\Debug\net8.0\UraDataModel.AssemblyInfo.cs
+D:\UraERP\Backend\UraAPI\UraDataModel\obj\Debug\net8.0\UraDataModel.csproj.CoreCompileInputs.cache
+D:\UraERP\Backend\UraAPI\UraDataModel\obj\Debug\net8.0\UraDataModel.dll
+D:\UraERP\Backend\UraAPI\UraDataModel\obj\Debug\net8.0\refint\UraDataModel.dll
+D:\UraERP\Backend\UraAPI\UraDataModel\obj\Debug\net8.0\UraDataModel.pdb
+D:\UraERP\Backend\UraAPI\UraDataModel\obj\Debug\net8.0\ref\UraDataModel.dll

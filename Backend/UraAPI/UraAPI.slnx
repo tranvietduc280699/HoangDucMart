@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="D:/UraERP/Backend/UraAPI/UraAPI/UraAPI.csproj" />
+  <Project Path="D:/UraERP/Backend/UraAPI/UraBusinessLogic/UraBusinessLogic.csproj" />
+  <Project Path="D:/UraERP/Backend/UraAPI/UraDataLayer/UraDataLayer.csproj" />
+  <Project Path="D:/UraERP/Backend/UraAPI/UraDataModel/UraDataModel.csproj" />
+</Solution>
