@@ -47,7 +47,7 @@ const adminMenuGroups = computed(() => {
   width: 160px;
   flex-shrink: 0;
   padding: 16px;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 89px);
   background: var(--surface);         
   border-right: 1px solid var(--border); 
   display: flex;

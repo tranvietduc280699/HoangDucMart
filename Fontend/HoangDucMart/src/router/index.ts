@@ -19,7 +19,7 @@ const router = createRouter({
       meta: { requiresAuth: true },
       children: [
         { path: '', name: 'dashboard', component: () => import('@/features/dashboard/DashboardView.vue') },
-        { path: 'category', name: 'category', component: () => import('@/features/products/Category.vue') }, 
+        { path: 'category', name: 'category', component: () => import('@/features/categorys/Category.vue') }, 
         { path: 'product', name: 'product', component: () => import('@/features/products/Product.vue') }     
       ]
     },

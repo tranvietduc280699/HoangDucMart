@@ -72,3 +72,4 @@ D:\UraERP\Backend\UraAPI\UraAPI\obj\Debug\net8.0\refint\UraAPI.dll
 D:\UraERP\Backend\UraAPI\UraAPI\obj\Debug\net8.0\UraAPI.pdb
 D:\UraERP\Backend\UraAPI\UraAPI\obj\Debug\net8.0\UraAPI.genruntimeconfig.cache
 D:\UraERP\Backend\UraAPI\UraAPI\obj\Debug\net8.0\ref\UraAPI.dll
+D:\UraERP\Backend\UraAPI\UraAPI\obj\Debug\net8.0\UraAPI.sourcelink.json

@@ -1,5 +1,100 @@
 [
   {
+    "ContainingType": "UraAPI.Controllers.BaseController\u00601[[UraDataModel.Models.Products.Category, UraDataModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
+    "RelativePath": "api/Category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UraAPI.Controllers.BaseController\u00601[[UraDataModel.Models.Products.Category, UraDataModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteById",
+    "RelativePath": "api/Category/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UraAPI.Controllers.BaseController\u00601[[UraDataModel.Models.Products.Category, UraDataModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetByCondition",
+    "RelativePath": "api/Category/filter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "UraDataModel.Models.BaseFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UraAPI.Controllers.BaseController\u00601[[UraDataModel.Models.Products.Category, UraDataModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insert",
+    "RelativePath": "api/Category/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "UraDataModel.Models.Products.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UraAPI.Controllers.BaseController\u00601[[UraDataModel.Models.Products.Category, UraDataModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Category/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "UraDataModel.Models.Products.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UraAPI.Controllers.BaseController\u00601[[UraDataModel.Models.Products.Category, UraDataModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateColumnAsync",
+    "RelativePath": "api/Category/UpdateColumn/{propertyName}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "entity",
+        "Type": "UraDataModel.Models.Products.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "UraAPI.Controllers.Debts.DebtController",
     "Method": "InsertDebt",
     "RelativePath": "api/Debt/InsertDebt",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UraAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b455b8e154863e8963750a2a5311d8ffbe2f0735")]
 [assembly: System.Reflection.AssemblyProductAttribute("UraAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UraAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
